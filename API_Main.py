@@ -1,6 +1,5 @@
 # Task
 # write a function to fetch data from sql table via api
-import sqlite3 as sql
 from flask import Flask, request, jsonify
 from API_SQL import getData,makeConn
 from API_MONGO import MongoConn,make_collection,find_data
