@@ -11,7 +11,7 @@ def MongoConn():
     """
     try:
         global mongo,db
-        mongo = pymongo.MongoClient("mongodb+srv://sunny:Heartbeat@cluster0.d6rrq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+        mongo = pymongo.MongoClient("mongodb+srv://<username>:<password>@cluster0.d6rrq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
         db = mongo['api_task_db']
     except Exception as e:
         print("makeConn Error - ",e)
